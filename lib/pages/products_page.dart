@@ -16,13 +16,13 @@ class ProductsPage extends StatelessWidget {
   final String catigoriTitel; 
 
 List<Product>  products = [
-    // الهواتف الذكية
+    // painkillers
     Product(
       id: 101,
-      name: 'One plus 11 ',
-      price: 999,
-      description: 'أحدث هاتف one plus 11 مع شريحتين ',
-      image: 'assets/images/products/smartphones/oneplus11.jpg',
+      name: 'paraseramol ',
+      price: 5500,
+      description: ' parasetamol pills to relieve pain and reduce fever',
+      image: 'assets/images/products/smartphones/painkillers_3.jpg',
       categoryId: 1,
       rating: 4.2,
       isAvailable: false,
@@ -30,44 +30,44 @@ List<Product>  products = [
     ),
     Product(
       id: 102,
-      name: 'سامسونج جالاكسي S23',
-      price: 899,
-      description: 'هاتف أندرويد قوي بكاميرا 200 ميجابكسل',
-      image: 'assets/images/products/smartphones/galaxys23.jpg',
+      name: 'Taplets',
+      price: 3500,
+      description: 'Pills to relieve pine and reduce fever',
+      image: 'assets/images/products/smartphones/painkillers_1.jpg',
       categoryId: 1,
       rating: 4.2,
-      isAvailable: false,
+      isAvailable: true,
     ),
 
-    // أجهزة اللابتوب
+    // vitamins
     Product(
       id: 201,
-      name: 'ماك بوك برو 16 إنش',
+      name: 'Suja',
       price: 2499,
-      description: 'شريحة M2 Pro، رام 16 جيجا، تخزين 512 جيجا',
-      image: 'assets/images/products/laptops/macbookpro.jpg',
+      description: 'ingredients that contain vitamin C—featuring organic juices and shots crafted to support your daily routine',
+      image: 'assets/images/products/laptops/vitamin_1.jpg',
       categoryId: 2,
       rating: 4.2,
       isAvailable: false,
     ),
     Product(
       id: 202,
-      name: 'ديل XPS 15',
-      price: 1799,
-      description: 'معالج إنتل i7، رام 16 جيجا، شاشة OLED 4K',
-      image: 'assets/images/products/laptops/dellxps15.jpg',
+      name: 'vitamin c',
+      price: 1795,
+      description: 'An essential water-soluble vitamin, essential for collagen production and wound healing',
+      image: 'assets/images/products/laptops/vitamin_2.jpg',
       categoryId: 2,
       rating: 4.2,
        isAvailable: false,
     ),
 
-    // الأجهزة الصوتية
+    //  
     Product(
       id: 301,
-      name: 'سوني WH-1000XM5',
+      name: 'piotie',
       price: 399,
-      description: 'سماعات رائدة في إلغاء الضوضاء',
-      image: 'assets/images/products/audio/sonyxm5.jpg',
+      description: 'A common dietary supplement used in dosages',
+      image: 'assets/images/products/audio/colde_2.jpg',
       categoryId: 3,
       rating: 4.2,
       isAvailable: false,
@@ -75,23 +75,23 @@ List<Product>  products = [
     ),
     Product(
       id: 302,
-      name: 'إيربودز برو 2',
-      price: 249,
-      description: 'إلغاء ضوضاء نشط مع شريحة H2',
-      image: 'assets/images/products/audio/airpodspro2.jpg',
+      name: 'Nyquil',
+      price: 2300,
+      description: 'Used to relieve symptoms of cold and flu, such as cough, congestion, and fever',
+      image: 'assets/images/products/audio/colde_1.jpg',
       categoryId: 3,
       rating: 4.2,
        isAvailable: true,
 
     ),
 
-    // الساعات الذكية
+    //  stomach
     Product(
       id: 401,
-      name: 'ساعة أبل الإصدار 8',
-      price: 399,
-      description: 'مراقبة صحية متقدمة مع مستشعر الحرارة',
-      image: 'assets/images/products/smartwatches/applewatch8.jpg',
+      name: 'Omepradex',
+      price: 2690,
+      description: 'Treats Gastroesophageal Reflux Disease',
+      image: 'assets/images/products/smartwatches/stomach_1.jpg',
       categoryId: 4,
       rating: 4.2,
       isAvailable: false,
@@ -99,10 +99,10 @@ List<Product>  products = [
     ),
     Product(
       id: 402,
-      name: 'سامسونج جالاكسي واتش 5 برو',
-      price: 449,
-      description: 'تصميم متين مع تحليل تكوين الجسم',
-      image: 'assets/images/products/smartwatches/galaxywatch5.jpg',
+      name: 'Omeprazole',
+      price: 4200,
+      description: 'used to treat excess stomach acid conditions including GERD',
+      image: 'assets/images/products/smartwatches/stomach_2.jpg',
       categoryId: 4,
       rating: 4.2,
       isAvailable: false,
@@ -122,17 +122,17 @@ List<Product>  products = [
     return Scaffold(
       backgroundColor: Colors.white,
     appBar:  custumAppbar(context,catigoriTitel),
-  bottomNavigationBar: CurvedNavigationBar(
-    backgroundColor: Colors.blueAccent,
-    items: <Widget>[
-      Icon(Icons.add, size: 30),
-      Icon(Icons.list, size: 30),
-      Icon(Icons.compare_arrows, size: 30),
-    ],
-    onTap: (index) {
-      //Handle button tap
-    },
-  ),
+  // bottomNavigationBar: CurvedNavigationBar(
+  //   backgroundColor: Colors.blueAccent,
+  //   items: <Widget>[
+  //     Icon(Icons.add, size: 30),
+  //     Icon(Icons.list, size: 30),
+  //     Icon(Icons.compare_arrows, size: 30),
+  //   ],
+  //   onTap: (index) {
+  //     //Handle button tap
+  //   },
+  // ),
     body: ListView.builder
     (itemCount: productFilter.length,
       itemBuilder:

@@ -65,7 +65,7 @@ final Product product;
                 ),
                 SizedBox(height: getProportionalHeight(5),),
       
-                Text(' ر.س ${product.price}',
+                Text(' ر.ي ${product.price}',
               
                 style: TextStyle(
                   fontSize: 16,
@@ -104,7 +104,7 @@ final Product product;
                  Container(
                   margin: const EdgeInsets.only(top: 6),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 8,
+                    horizontal: 5,
                     vertical: 2,
                   ),
                   decoration: BoxDecoration(

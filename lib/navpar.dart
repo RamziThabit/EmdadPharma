@@ -23,9 +23,9 @@ class _MainLayoutState extends State<MainLayout> {
   ];
 
   final List<String> _titles = const [
-    "الرئيسية",
-    "الأصناف",
-    "السلة",
+    "Home",
+    "Departments",
+    "The Pasket",
   ];
 
   @override

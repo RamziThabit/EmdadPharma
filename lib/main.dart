@@ -33,17 +33,29 @@ class loginApp extends StatelessWidget {
         Locale('en')
       ],
 
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed( 
-          seedColor: Colors.orange
-          ).copyWith(
-            primary: Colors.orange,
-            onPrimary: Colors.white,
-            secondary: Colors.black,
-            onSecondary: Colors.white,
-          ),
+      // theme: ThemeData(
+      //   colorScheme: ColorScheme.fromSeed( 
+      //     seedColor: Colors.orange
+      //     ).copyWith(
+      //       primary: Colors.orange,
+      //       onPrimary: Colors.white,
+      //       secondary: Colors.black,
+      //       onSecondary: Colors.white,
+      //     ),
 
-      ),
+      // ),
+      theme: ThemeData(
+  colorScheme: ColorScheme.fromSeed(
+    seedColor: const Color(0xFF2563EB), // أزرق طبي
+  ).copyWith(
+    primary: const Color(0xFF2563EB),   // اللون الأساسي
+    onPrimary: Colors.white,
+
+    secondary: const Color(0xFF10B981), // أخضر طبي جميل
+    onSecondary: Colors.white,
+  ),
+),
+
       debugShowCheckedModeBanner: false,
       home: MainLayout(),
     );

@@ -33,7 +33,7 @@ Category(     id: 1,
   Widget build(BuildContext context) {
     return Scaffold(
 
-      appBar: custumAppbar(context,"الاقسام"),
+      appBar: custumAppbar(context,"departements"),
 
 
       body: Padding(padding: const EdgeInsets.all(20),

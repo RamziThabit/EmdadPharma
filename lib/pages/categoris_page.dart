@@ -13,24 +13,21 @@ class CategorisPage extends StatelessWidget {
    CategorisPage({super.key});
 final List catiegories=[
 Category(     id: 1,
-              tital: "هواتف",
-              image: "assets/images/categories/smart-phones.png",),
+              tital: "pinkillers",
+              image: "assets/images/categories/painkillers.png",),
 
               Category(
               id: 2,
-              tital: "الحواسيب",
-              image: "assets/images/categories/laptop.png",),
+              tital: "vitamins",
+              image: "assets/images/categories/vitamin.png",),
               Category(
               id: 3,
-              tital: "سماعات",
-              image: "assets/images/categories/audio-devices.png",),
+              tital: "colds",
+              image: "assets/images/categories/colds.png",),
               Category(
                id: 4, 
-              tital: "الاجهزة الصوتية",
-              image: "assets/images/categories/smart-watches.png",)
-
-             
-              
+              tital: "Stomach",
+              image: "assets/images/categories/stomach.png",)              
 ];
   @override
   Widget build(BuildContext context) {

@@ -197,7 +197,7 @@ int counter=1;
                             Text('تمت إضافة المنتج للسلة'),
                           ],
                         ),
-                        backgroundColor: Colors.green,
+                        backgroundColor: const Color.fromARGB(255, 205, 161, 228),
                         behavior: SnackBarBehavior.floating,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),

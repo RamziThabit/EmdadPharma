@@ -40,7 +40,7 @@ final Category category;
                  Image.asset(category.image,
                  width: double.infinity,
                  height: double.infinity,
-                 fit: BoxFit.contain,
+                 fit: BoxFit.fill,
                  ),
                Container(
               decoration: BoxDecoration(
